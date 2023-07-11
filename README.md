@@ -2,8 +2,6 @@
 
 ## Balance (Outward/Inward)
 
-Balance (Outward / Inward):
-
 Inward: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd>
 
 Outward: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd>
