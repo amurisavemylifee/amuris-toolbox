@@ -1,7 +1,7 @@
 {
   "name": "amuris-toolbox",
   "displayName": "toolbox",
-  "description": "",
+  "description": "A set of features to speed up your work",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -12,9 +12,17 @@
     "Keymaps",
     "Extension Packs"
   ],
+  "author": {
+    "name": "Taras Shashurin aka Amuri"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amurisavemylifee/amuris-toolbox"
+  },
   "main": "./out/extension.js",
   "activationEvents": [
-    "amuris-toolbox.createIndex"
+    "amuris-toolbox.createIndex",
+    "amuris-toolbox.textSwap"
   ],
   "contributes": {
     "keybindings": [
