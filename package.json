@@ -1,0 +1,88 @@
+{
+  "name": "amuris-toolbox",
+  "displayName": "toolbox",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Keymaps",
+    "Extension Packs"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "amuris-toolbox.createIndex"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "win": "ctrl+alt+1",
+        "key": "ctrl+alt+1",
+        "command": "editor.emmet.action.balanceIn",
+        "when": "editorTextFocus"
+      },
+      {
+        "win": "ctrl+alt+2",
+        "key": "ctrl+alt+2",
+        "command": "editor.emmet.action.balanceOut",
+        "when": "editorTextFocus"
+      },
+      {
+        "win": "ctrl+alt+3",
+        "key": "ctrl+alt+3",
+        "command": "editor.emmet.action.matchTag",
+        "when": "editorTextFocus"
+      },
+      {
+        "win": "ctrl+alt+4",
+        "key": "ctrl+alt+4",
+        "command": "editor.emmet.action.removeTag",
+        "when": "editorTextFocus"
+      },
+      {
+        "win": "ctrl+alt+5",
+        "key": "ctrl+alt+5",
+        "command": "amuris-toolbox.textSwap",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "amuris-toolbox.createIndex",
+          "group": "1_modification",
+          "when": "explorerViewletVisible"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "amuris-toolbox.createIndex",
+        "title": "Create index"
+      },
+      {
+        "command": "amuris-toolbox.textSwap",
+        "title": "Swap text"
+      },
+      {
+        "command": "amuris-toolbox.bracketSelection",
+        "title": "Select brackets"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/glob": "^8.1.0",
+    "@types/node": "20.2.5",
+    "glob": "^8.1.0",
+    "typescript": "^5.1.3"
+  }
+}
