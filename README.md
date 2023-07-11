@@ -4,9 +4,9 @@
 
 Balance (Outward / Inward):
 
-Outward: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd>
+Inward: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd>
 
-Inward: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>
+Outward: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd>
 
 ![1](media/balance_outward_inward.gif)
 
@@ -14,7 +14,7 @@ Inward: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>
 
 ## Go to Matching Pair
 
-<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>3</kbd>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>3</kbd>
 
 ![2](media/go_to_match.gif)
 
@@ -22,7 +22,7 @@ Inward: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>
 
 ## Remove Tag
 
-<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>4</kbd>
 
 ![3](media/deletetag.gif)
 
@@ -30,7 +30,7 @@ Inward: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>
 
 ## Swap Text
 
-<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>5</kbd>
 
 NO PHOTO NOW
 
