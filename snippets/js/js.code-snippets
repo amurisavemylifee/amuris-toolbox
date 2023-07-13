@@ -1,0 +1,108 @@
+{
+  "import": {
+    "prefix": "imp",
+    "body": "import ${0:moduleName} from '${1:module}';",
+    "description": "Imports entire module statement in ES6 syntax"
+  },
+  "anonymousFunction": {
+    "prefix": "afn",
+    "body": "(${1}) => {\n\t${2}\n}",
+    "description": "Creates an anonymous function in ES6 syntax"
+  },
+  "consoleLog": {
+    "prefix": "log",
+    "body": "console.log(${1});",
+    "description": "Displays a message in the console"
+  },
+  "function": {
+    "prefix": "fn",
+    "body": "function ${1:funcName}(${2}) {\n\t${0}\n}",
+    "description": "Creates a function"
+  },
+  "for": {
+    "prefix": "for",
+    "body": "for (let ${1:i} = ${2:0}; ${1:i} ${3:< 3}; ${1:i}++) {\n\t${0}\n}",
+    "description": "Creates a for"
+  },
+  "if": {
+    "prefix": "if",
+    "body": "if (${1:condition}) {\n\t${0}\n}",
+    "description": "Creates a if"
+  },
+  "else": {
+    "prefix": "else",
+    "body": "else {\n\t${0}\n}",
+    "description": "Creates a else"
+  },
+  "elseIf": {
+    "prefix": "elseIf",
+    "body": "else if (${1:condition}) {\n\t${0}\n}",
+    "description": "Creates a else if"
+  },
+  // Array methods
+  "every": {
+    "prefix": "every",
+    "body": "every((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a every statement in ES6 syntax"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": "filter((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a filter statement in ES6 syntax"
+  },
+  "find": {
+    "prefix": "find",
+    "body": "find((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a find statement in ES6 syntax"
+  },
+  "findIndex": {
+    "prefix": "findIndex",
+    "body": "findIndex((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a findIndex statement in ES6 syntax"
+  },
+  "findLast": {
+    "prefix": "findLast",
+    "body": "findLast((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a findLast statement in ES6 syntax"
+  },
+  "findLastIndex": {
+    "prefix": "findLastIndex",
+    "body": "findLastIndex((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a findLastIndex statement in ES6 syntax"
+  },
+  "forEach": {
+    "prefix": "forEach",
+    "body": "forEach((${1:item}) => {\n\t${0}\n});",
+    "description": "Creates a forEach statement in ES6 syntax"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "map((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a map statement in ES6 syntax"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "body": "reduce((${1:accumulator},${2:item}) => {\n\treturn ${0}\n},${3:initialValue});",
+    "description": "Creates a reduce statement in ES6 syntax"
+  },
+  "reduceRight": {
+    "prefix": "reduceRight",
+    "body": "reduceRight((${1:accumulator},${2:item}) => {\n\treturn ${0}\n},${3:initialValue});",
+    "description": "Creates a reduceRight statement in ES6 syntax"
+  },
+  "some": {
+    "prefix": "some",
+    "body": "some((${1:item}) => {\n\treturn ${0}\n});",
+    "description": "Creates a some statement in ES6 syntax"
+  },
+  "sort": {
+    "prefix": "sort",
+    "body": "sort((${1:a},${2:b}) => {\n\tif (${3:a is less than b by some ordering criterion}) {\n\treturn -1;\n\t}\n\n\tif (${4:a is greater than b by the ordering criterion}) {\n\treturn 1;\n\t}\n\n\t// a must be equal to b\n\treturn 0;\n});",
+    "description": "Creates a sort statement in ES6 syntax"
+  },
+  "toSorted": {
+    "prefix": "toSorted",
+    "body": "toSorted((${1:a},${2:b}) => {\n\tif (${3:a is less than b by some ordering criterion}) {\n\treturn -1;\n\t}\n\n\tif (${4:a is greater than b by the ordering criterion}) {\n\treturn 1;\n\t}\n\n\t// a must be equal to b\n\treturn 0;\n});",
+    "description": "Creates a toSorted statement in ES6 syntax"
+  }
+}

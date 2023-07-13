@@ -1,0 +1,179 @@
+{
+  "defineProps": {
+    "prefix": "vdefineProps",
+    "body": "const props = defineProps({${0}})",
+    "description": "Creates a vue3 defineProps"
+  },
+  "defineEmits": {
+    "prefix": "vdefineEmits",
+    "body": "const emit = defineEmits(['${0}'])",
+    "description": "Creates a vue3 defineEmits"
+  },
+  "defineExpose": {
+    "prefix": "vdefineExpose",
+    "body": "defineExpose({${0}})",
+    "description": "Creates a vue3 defineExpose"
+  },
+  "ref": {
+    "prefix": "vref",
+    "body": "ref(${0:null})",
+    "description": "Creates a vue3 ref"
+  },
+  "reactive": {
+    "prefix": "vreactive",
+    "body": "reactive({${0}})",
+    "description": "Creates a vue3 reactive"
+  },
+  "computed": {
+    "prefix": "vcomputed",
+    "body": "computed(()=>{\n\treturn ${0}\n})",
+    "description": "Creates a vue3 computed"
+  },
+  "watch": {
+    "prefix": "vwatch",
+    "body": "watch(${1},\n\t(newValue,oldValue) => {\n\t${0}\n})",
+    "description": "Creates a vue3 watch"
+  },
+  "provide": {
+    "prefix": "vprovide",
+    "body": "provide('${1:provideName}',${0:provideItem})",
+    "description": "Creates a vue3 provide"
+  },
+  "inject": {
+    "prefix": "vinject",
+    "body": "inject(${0:injectionKey})",
+    "description": "Creates a vue3 inject"
+  },
+  "readonly": {
+    "prefix": "vreadonly",
+    "body": "readonly(${0:source})",
+    "description": "Creates a vue3 readonly"
+  },
+  "watchEffect": {
+    "prefix": "vwatchEffect",
+    "body": "watchEffect(()=>{${0}})",
+    "description": "Creates a vue3 watchEffect"
+  },
+  "isRef": {
+    "prefix": "visRef",
+    "body": "isRef(${0})",
+    "description": "Creates a vue3 isRef"
+  },
+  "unref": {
+    "prefix": "vunref",
+    "body": "unref(${0})",
+    "description": "Creates a vue3 unref"
+  },
+  "toValue": {
+    "prefix": "vtoValue",
+    "body": "toValue(${0:source})",
+    "description": "Creates a vue3 toValue"
+  },
+  "toRefs": {
+    "prefix": "vtoRefs",
+    "body": "toRefs(${0:source})",
+    "description": "Creates a vue3 toRefs"
+  },
+  "isReactive": {
+    "prefix": "visReactive",
+    "body": "isReactive(${0:source})",
+    "description": "Creates a vue3 isReactive"
+  },
+  "isReadonly": {
+    "prefix": "visReadonly",
+    "body": "isReadonly(${0:source})",
+    "description": "Creates a vue3 isReadonly"
+  },
+  "isProxy": {
+    "prefix": "visProxy",
+    "body": "isProxy(${0:source})",
+    "description": "Creates a vue3 isProxy"
+  },
+  "onMounted": {
+    "prefix": "vonMounted",
+    "body": "onMounted(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onMounted"
+  },
+  "onUpdated": {
+    "prefix": "vonUpdated",
+    "body": "onUpdated(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onUpdated"
+  },
+  "onUnmounted": {
+    "prefix": "vonUnmounted",
+    "body": "onUnmounted(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onUnmounted"
+  },
+  "onBeforeMount": {
+    "prefix": "vonBeforeMount",
+    "body": "onBeforeMount(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onBeforeMount"
+  },
+  "onBeforeUpdate": {
+    "prefix": "vonBeforeUpdate",
+    "body": "onBeforeUpdate(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onBeforeUpdate"
+  },
+  "onBeforeUnmount": {
+    "prefix": "vonBeforeUnmount",
+    "body": "onBeforeUnmount(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onBeforeUnmount"
+  },
+  "onActivated": {
+    "prefix": "vonActivated",
+    "body": "onActivated(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onActivated"
+  },
+  "onDeactivated": {
+    "prefix": "vonDeactivated",
+    "body": "onDeactivated(()=>{\n\t${0}\n})",
+    "description": "Creates a vue3 onDeactivated"
+  },
+  "shallowRef": {
+    "prefix": "vshallowRef",
+    "body": "shallowRef(${0:null})",
+    "description": "Creates a vue3 shallowRef"
+  },
+  "shallowReactive": {
+    "prefix": "vshallowReactive",
+    "body": "shallowReactive(${0:{}})",
+    "description": "Creates a vue3 shallowReactive"
+  },
+  "shallowReadonly": {
+    "prefix": "vshallowReadonly",
+    "body": "shallowReadonly(${0:source})",
+    "description": "Creates a vue3 shallowReadonly"
+  },
+  "toRaw": {
+    "prefix": "vtoRaw",
+    "body": "toRaw(${0:source})",
+    "description": "Creates a vue3 toRaw"
+  },
+  "markRaw": {
+    "prefix": "vmarkRaw",
+    "body": "markRaw(${0:source})",
+    "description": "Creates a vue3 markRaw"
+  },
+  "triggerRef": {
+    "prefix": "vtriggerRef",
+    "body": "triggerRef(${0})",
+    "description": "Creates a vue3 triggerRef"
+  },
+
+  // custom snippets
+  "useRoute": {
+    "prefix": "vroute",
+    "body": "const route = useRoute()",
+    "description": "Creates a vue3 route instance"
+  },
+  "useRouter": {
+    "prefix": "vrouter",
+    "body": "const router = useRouter()",
+    "description": "Creates a vue3 router instance"
+  },
+  "createStore": {
+    "prefix": "vstore",
+    "body": "const $1Store = use${1/(.*)/${1:/capitalize}/}Store()${0}",
+    "description": "Creates a vue3 router instance"
+  }
+}

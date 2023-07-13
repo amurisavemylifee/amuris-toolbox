@@ -1,0 +1,82 @@
+{
+  "v-text": {
+    "prefix": ["vtext"],
+    "body": "v-text=\"$1\"\t"
+  },
+  "v-html": {
+    "prefix": ["vhtml"],
+    "body": "v-html=\"$1\"\t"
+  },
+  "v-show": {
+    "prefix": ["vshow"],
+    "body": "v-show=\"$1\"\t"
+  },
+  "v-if": {
+    "prefix": ["vif"],
+    "body": "v-if=\"$1\"\t"
+  },
+  "v-else": {
+    "prefix": ["velse"],
+    "body": "v-else\t"
+  },
+  "v-else-if": {
+    "prefix": ["velif"],
+    "body": "v-else-if=\"$1\"\t"
+  },
+  "v-for": {
+    "prefix": ["vfor"],
+    "body": "v-for=\"${2:item} in ${1:items}\" :key=\"$2$3\"\t"
+  },
+  "v-model": {
+    "prefix": ["vmodel"],
+    "body": "v-model=\"$1\"\t"
+  },
+  "scoped slot": {
+    "prefix": ["vslot"],
+    "body": "v-slot=\"{$1}\"\t"
+  },
+  "v-pre": {
+    "prefix": ["vpre"],
+    "body": "v-pre=\"$1\"\t"
+  },
+  "v-once": {
+    "prefix": ["vonce"],
+    "body": "v-once\t"
+  },
+  "v-memo": {
+    "prefix": ["vmemo"],
+    "body": "v-memo=\"[$1]\"\t"
+  },
+  "v-cloak": {
+    "prefix": ["vcloak"],
+    "body": "v-cloak\t"
+  },
+  "Vue ref": {
+    "prefix": ["vref"],
+    "body": "ref=\"$1\"\t"
+  },
+  "bind property": {
+    "prefix": ["vb"],
+    "body": ":${1:prop}=\"${2:$1}\""
+  },
+  "on property": {
+    "prefix": ["vo"],
+    "body": "@${1:on}=\"$2\""
+  },
+  "named template": {
+    "prefix": ["templateN"],
+    "body": ["<template #${1:default}>", "\t$0", "</template>"]
+  },
+  "template": {
+    "prefix": ["template"],
+    "body": "<template>$0</template>"
+  },
+  "slot": {
+    "prefix": ["slot"],
+    "body": "<slot>$0</slot>"
+  },
+  "named slot": {
+    "prefix": ["slotN"],
+    "body": ["<slot name=\"${1:default}\">", "\t$0", "</slot>"]
+  }
+}

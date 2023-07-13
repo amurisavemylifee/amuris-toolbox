@@ -1,8 +1,9 @@
 {
   "name": "amuris-toolbox",
-  "displayName": "toolbox",
+  "displayName": "Amuri's Toolbox",
   "description": "A set of features to speed up your work",
   "version": "0.0.1",
+  "publisher": "amurisavemylifee",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -25,6 +26,28 @@
     "amuris-toolbox.textSwap"
   ],
   "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/js/js.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue/script/vue-script.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/vue/template/vue-template.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/vue/style/vue-style.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/vue.code-snippets"
+      }
+    ],
     "keybindings": [
       {
         "win": "ctrl+alt+1",
