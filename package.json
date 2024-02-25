@@ -2,7 +2,8 @@
   "name": "amuris-toolbox",
   "displayName": "Amuri's Toolbox",
   "description": "A set of features to speed up your work",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "type": "commonjs",
   "publisher": "amurisavemylifee",
   "engines": {
     "vscode": "^1.80.0"
@@ -23,29 +24,15 @@
   "main": "./out/extension.js",
   "activationEvents": [
     "amuris-toolbox.createIndex",
-    "amuris-toolbox.textSwap"
+    "amuris-toolbox.textSwap",
+    "amuris-toolbox.bracketSelection",
+    "amuris-toolbox.changeQuote"
   ],
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/js/js.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue/script/vue-script.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/vue/template/vue-template.code-snippets"
-      },
-      {
-        "language": "css",
-        "path": "./snippets/vue/style/vue-style.code-snippets"
-      },
-      {
         "language": "vue",
-        "path": "./snippets/vue/vue.code-snippets"
+        "path": "./snippets/vue.code-snippets"
       }
     ],
     "keybindings": [
@@ -83,24 +70,62 @@
     "menus": {
       "explorer/context": [
         {
-          "command": "amuris-toolbox.createIndex",
+          "command": "amuris-toolbox.wrapFileWithPublicAPI",
           "group": "1_modification",
-          "when": "explorerViewletVisible"
+          "when": "resourceLangId == vue || resourceLangId == typescript || resourceLangId == javascript || resourceLangId == typescriptreact || resourceLangId == javascriptreact"
+        },
+        {
+          "command": "amuris-toolbox.createUtilFile",
+          "group": "1_modification",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "amuris-toolbox.createPublicAPIFile",
+          "group": "1_modification",
+          "when": "explorerResourceIsFolder"
         }
       ]
     },
     "commands": [
       {
-        "command": "amuris-toolbox.createIndex",
-        "title": "Create index"
+        "command": "amuris-toolbox.wrapFileWithPublicAPI",
+        "title": "Обернуть файл в папку с Public API"
+      },
+      {
+        "command": "amuris-toolbox.createUtilFile",
+        "title": "Создать вспомогательный файл"
       },
       {
         "command": "amuris-toolbox.textSwap",
-        "title": "Swap text"
+        "title": "Поменять местами выделенное"
       },
       {
-        "command": "amuris-toolbox.bracketSelection",
-        "title": "Select brackets"
+        "command": "amuris-toolbox.toCamelCase",
+        "title": "Перевести в camelCase"
+      },
+      {
+        "command": "amuris-toolbox.toPascalCase",
+        "title": "Перевести в PascalCase"
+      },
+      {
+        "command": "amuris-toolbox.toKebabCase",
+        "title": "Перевести в kebab-case"
+      },
+      {
+        "command": "amuris-toolbox.toLowerCase",
+        "title": "Перевести в lowercase"
+      },
+      {
+        "command": "amuris-toolbox.toUpperCase",
+        "title": "Перевести в UPPERCASE"
+      },
+      {
+        "command": "amuris-toolbox.toConstantCase",
+        "title": "Перевести в CONSTANT_CASE"
+      },
+      {
+        "command": "amuris-toolbox.pasteWithSeparator",
+        "title": "Вставить с разделителем"
       }
     ]
   },
@@ -110,10 +135,14 @@
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/vscode": "^1.80.0",
+    "@ts-ast-parser/core": "^0.7.0",
     "@types/glob": "^8.1.0",
     "@types/node": "20.2.5",
+    "@types/vscode": "^1.80.0",
     "glob": "^8.1.0",
     "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "parse-ts-to-ast": "^0.1.4"
   }
 }

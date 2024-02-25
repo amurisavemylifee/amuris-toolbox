@@ -1,0 +1,63 @@
+{
+  //Imports
+  "Import Default": {
+    "prefix": "@imp",
+    "body": "import ${0:moduleName} from '${1|module,@/,./|}$2'"
+  },
+
+  //If
+  "If Statement": {
+    "prefix": "@if",
+    "body": "if ($1) {\n\t$2\n}$0"
+  },
+  "Else Statement": {
+    "prefix": "@else",
+    "body": "else {\n\t$1\n}$0"
+  },
+  "Else If Statement": {
+    "prefix": "@elseIf",
+    "body": "else if ($1) {\n\t$2\n}$0"
+  },
+
+  //Function
+  "Arrow Function": {
+    "prefix": "@afn",
+    "body": "($1) => {\n\t$2\n}$0"
+  },
+  "Async Arrow Function": {
+    "prefix": "@afn:async",
+    "body": "async ($1) => {\n\t$2\n}$0"
+  },
+  "Function": {
+    "prefix": "@fn",
+    "body": "function ${1:name}($2) {\n\t$3\n}$0"
+  },
+  "Async Function": {
+    "prefix": "@fn:async",
+    "body": "async function ${1:name}($2) {\n\t$3\n}$0"
+  },
+  "Method": {
+    "prefix": "@method",
+    "body": "${1:name}($2) {\n\t$3\n}$0"
+  },
+  "Async Method": {
+    "prefix": "@method:async",
+    "body": "async ${1:name}($2) {\n\t$3\n}$0"
+  },
+
+  //Console
+  "Console Log": {
+    "prefix": "@log",
+    "body": "console.log(${1:${TM_SELECTED_TEXT:$CLIPBOARD}});"
+  },
+
+  //Vars
+  "Const": {
+    "prefix": "@const",
+    "body": "const ${1:name} = $0"
+  },
+  "Let": {
+    "prefix": "@let",
+    "body": "let ${1:name} = $0"
+  }
+}

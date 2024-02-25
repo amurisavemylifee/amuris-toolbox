@@ -1,0 +1,18 @@
+{
+  "defineProps": {
+    "prefix": "@defineProps",
+    "body": "defineProps<{\n$0\n}>()"
+  },
+  "defineProps Full": {
+    "prefix": "@defineProps:full",
+    "body": "const props = defineProps<{\n$0\n}>()"
+  },
+  "defineEmits": {
+    "prefix": "@defineEmits",
+    "body": "defineEmits<{\n$0\n}>()"
+  },
+  "defineEmits Full": {
+    "prefix": "@defineEmits:full",
+    "body": "const emit = defineEmits<{\n$0\n}>()"
+  }
+}

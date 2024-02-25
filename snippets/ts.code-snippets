@@ -1,0 +1,31 @@
+{
+  "Wrap as generic": {
+    "prefix": "@wrap:generic",
+    "body": "${1:Name}<$TM_SELECTED_TEXT$2>$0"
+  },
+
+  "Wrap with as": {
+    "prefix": "@wrap:as",
+    "body": "(${1:$TM_SELECTED_TEXT} as $0)"
+  },
+
+  "Interface": {
+    "prefix": "@interface",
+    "body": "interface ${1:name} {\n\t$0\n}"
+  },
+
+  "Enum": {
+    "prefix": "@enum",
+    "body": "enum ${1:name} {\n\t$0\n}"
+  },
+
+  "Type": {
+    "prefix": "@type",
+    "body": "type ${1:name} = $0"
+  },
+
+  "Extends condition": {
+    "prefix": "@extends",
+    "body": "${1:T} extends ${2:SOME} ? $0 : never"
+  }
+}

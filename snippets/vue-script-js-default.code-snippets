@@ -1,0 +1,48 @@
+{
+  "defineExpose": {
+    "prefix": "@defineExpose",
+    "body": "defineExpose({$0})"
+  },
+  "defineOptions": {
+    "prefix": "@defineOptions",
+    "body": "defineOptions({inheritAttrs: false$0})"
+  },
+  "ref": {
+    "prefix": "@ref",
+    "body": "ref(${0:null})"
+  },
+  "reactive": {
+    "prefix": "@reactive",
+    "body": "reactive({$0})"
+  },
+  "computed": {
+    "prefix": "@computed",
+    "body": "computed(()=>{\n\treturn $0\n})"
+  },
+  "watch": {
+    "prefix": "@watch",
+    "body": "watch($1,\n\t(newValue,oldValue) => {\n\t$0\n})"
+  },
+  "provide": {
+    "prefix": "@provide",
+    "body": "provide($1InjectionKey,${0:item})"
+  },
+  "inject": {
+    "prefix": "@inject",
+    "body": "inject($0InjectionKey)"
+  },
+  "lifecycle": {
+    "prefix": "@lifecycle",
+    "body": "${1|onBeforeMount,onMounted,onBeforeUnmount,onUnmounted,onUpdated,onBeforeUpdate|}(() => {\n\t$0\n})"
+  },
+
+  // custom snippets
+  "useRoute": {
+    "prefix": "@route",
+    "body": "const route = useRoute()"
+  },
+  "useRouter": {
+    "prefix": "@router",
+    "body": "const router = useRouter()"
+  }
+}

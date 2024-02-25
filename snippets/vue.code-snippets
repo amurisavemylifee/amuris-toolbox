@@ -1,0 +1,19 @@
+{
+  "baseTs": {
+    "prefix": "vbase",
+    "body": [
+      "<template>",
+      "\t$1",
+      "</template>",
+      "",
+      "<script lang=\"ts\" setup>",
+      "$0",
+      "</script>"
+    ]
+  },
+
+  "style": {
+    "prefix": "vstyle",
+    "body": ["<style lang=\"scss\" scoped>\n$0\n</style>"]
+  }
+}
